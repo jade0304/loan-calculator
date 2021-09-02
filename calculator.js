@@ -59,5 +59,5 @@ function updateMonthly(monthly) {
   
 }
 
-
+// original math formula
 // return  ((p * r) * (Math.pow((1 + r), n))) / ((Math.pow((1 + r), n)) -1).toFixed(2) 
