@@ -34,6 +34,8 @@ update();
 // Get the current values from the UI
 // Update the monthly payment
 function update() {
+  const currentUIValues = getCurrentUIValues();
+  updateMonthly(calculateMonthlyPayment(currentUIValues))
 
 }
 
@@ -51,7 +53,7 @@ function calculateMonthlyPayment(personalValues) {
 // Given a string representing the monthly payment value,
 // update the UI to show the value.
 function updateMonthly(monthly) {
-const monthlyPaymentUI = document.getElementById(monthly-payment);
-monthlyPaymentUI.innerText = "$" + monthly;
-
+  const monthlyPaymentUI = document.getElementById(monthly-payment);
+  monthlyPaymentUI.innerText = "$" + monthly;
+  
 }
